@@ -6,10 +6,10 @@
 REPO='https://github.com/Pushkin31/dots'
 
 # git branch used when pushing changes, defaults to HEAD
-BRANCH='main'
+BRANCH=''
 
 # location for backup/dotfile folder or repo to be created/cloned
-BPATH='/mnt/Files/dots/'
+BPATH='/home/mxn/Backup_dots/'
 
 # location kbfs
 KB_PATH='/run/user/1000/keybase/kbfs/private/cvc/dots'

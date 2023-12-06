@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APPS=(
-	'geany'
+	'conky1'
 	'conky2'
 )
 
@@ -10,7 +10,7 @@ APP_conky2_cmd="conky -c $HOME/.conkyrc2"
 
 
 
-desktop=`$HOME/.bin/show_desktop -q`
+desktop=`$HOME/bin/show_desktop -q`
 [ $? -eq 0 ] || exit 1
 
 start() {

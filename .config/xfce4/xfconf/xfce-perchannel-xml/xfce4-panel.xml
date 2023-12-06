@@ -24,5 +24,28 @@
         <property name="popup-at-pointer" type="bool" value="true"/>
       </property>
     </property>
+    <property name="plugin-6" type="empty">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="сетевое соединение ethernet «проводное подключение 1» активно"/>
+        <value type="string" value="parcellite"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="аплет networkmanager"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="empty">
+      <property name="recent" type="array">
+        <value type="string" value="ctlos-helper.desktop"/>
+        <value type="string" value="parcellite.desktop"/>
+        <value type="string" value="xfce-keyboard-settings.desktop"/>
+        <value type="string" value="smplayer.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-11" type="empty">
+      <property name="only-maximized" type="bool" value="true"/>
+      <property name="show-on-desktop" type="bool" value="false"/>
+      <property name="sync-wm-theme" type="bool" value="true"/>
+      <property name="button-layout" type="string" value="HMC"/>
+      <property name="theme" type="string" value="Dracula-standard-buttons"/>
+    </property>
   </property>
 </channel>
