@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to startPage</title>
+  <link rel="icon" href="C:/Users/mXn/Documents/Terminal Sudo.ico" type="image/icon type">
+
+  <style type="text/css">
+    html {
+      background-image: url("/home/mxn/startpage/137.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      color: #cfd1dd;
+      font-size: 16px; font-family: "Hack Nerd Font Mono", "Droid Sans Mono", "Liberation Sans Mono", monospace;
+      height: 100%;
+  
+    }
+    body {
+      background-color: #161720;
+      color: #cfd1dd;
+      min-height: 30ch;
+      min-width: 50px;
+      width: 40%;
+      max-width: 800px;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      /*justify-content: center;*/
+    }
+    @media only screen and (max-width: 1250px) {
+      body {
+        width: 50%;
+      }
+    }
+    @media only screen and (max-width: 950px) {
+      body {
+        width: 70%;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      body {
+        width: 100%;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    p span {
+      color: #aeb1ff;
+    }
+    a {
+      color: #aeb1ff;
+      text-decoration: none;
+      padding: .3em 0;
+    }
+    a:focus, a:hover {
+      color: #7DA6FF;
+    }
+    nav {
+      column-gap: .3em;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      padding: 1em 0;
+    }
+    nav1 {
+      column-gap: .3em;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      padding: 1em 0;
+    }
+    p #ps1 {
+      color: #aeb1ff;
+    }
+    p #prompt {
+      color: #a3be8c;
+      font-family: "Hack Nerd Font Mono", "Droid Sans Mono", "Liberation Sans Mono", monospace;
+    }
+    p #cursor {
+      background-color: #aeb1ff;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 0; }
+      49% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    .data {
+      background: transparent;
+      width: 89%;
+      border: none;
+      outline:0;
+      color: transparent;
+      text-shadow:0 0 0 #cfd1dd;
+      caret-color: #aeb1ff;
+      font-size: 16px; font-family: "Hack Nerd Font Mono", "Droid Sans Mono", "Liberation Sans Mono", monospace;
+
+    }
+  </style>
+  <script>
+    function send_data(event){
+      var str = document.getElementById("pososi").value;
+      if(event.keyCode == 13){
+        if(str != ""){
+          location = "https://duckduckgo.com/" + str;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <p><span id="ps1">~ </span><span id="prompt">  </span>ls</p>
+  <nav>
+    <a id="url" href="https://www.instagram.com/direct/inbox/">Instagram</a>
+    <a id="url" href="https://e.mail.ru/inbox/">Mail</a>
+    <a id="url" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+    <a id="url" href="https://drive.google.com/drive/my-drive">G-drive</a>
+    <a id="url" href="https://github.com/Pushkin31?tab=repositories">Github</a>
+    <a id="url" href="https://youtube.com/">Youtube</a>
+  </nav>
+
+    <p><span id="ps1">~ </span><span id="prompt">  </span> ls linux</p>
+    <nav1>
+      <a id="url" href="https://www.opennet.ru/opennews/">opennet</a>
+      <a id="url" href="https://www.linux.org.ru/news/">lor</a>
+      <a id="url" href="https://reddit.com/r/unixporn/">unixporn</a>
+      <a id="url" href="https://wallhaven.cc/">wallhaven</a>
+      <a id="url" href="https://unsplash.com/t/wallpapers">unsplash</a>
+
+    </nav1>
+  <p>
+    <span id="ps1">~ </span>
+      <span id="prompt">  </span>
+      <input id="pososi" onkeypress="send_data(event)" autocomplete=off class=data type = text autofocus maxlength="2048">
+      </span>
+  </p>
+
+</body></html>

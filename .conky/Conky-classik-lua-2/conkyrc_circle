@@ -1,0 +1,105 @@
+#==============================================================================
+#  remastering 2018    =oldhank=  conkyrc_classik-lua- version-2
+#
+#  author  : SLK
+#  version : v2011011601
+#  license : Distributed under the terms of GNU GPL version 2 or later
+#
+#==============================================================================
+background yes
+use_xft yes
+xftfont Arial Black:size=9
+xftalpha 0.8
+text_buffer_size 2048
+background no
+update_interval 1
+own_window_argb_visual yes
+total_run_times 0
+
+
+own_window yes
+#own_window_transparent yes
+own_window_argb_value 0 #value glass 0-250 full
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+double_buffer yes
+
+draw_shades no
+draw_graph_borders no
+draw_outline no
+draw_borders no
+
+stippled_borders 0
+
+border_width 1
+#default_color white
+# own_window_colour white
+no_buffers yes
+
+override_utf8_locale yes
+uppercase no
+use_spacer none
+
+cpu_avg_samples 2
+net_avg_samples 2
+temperature_unit celsius
+
+gap_x 55
+gap_y 280
+minimum_size 190 450
+maximum_width 190
+#alignment top_right
+#alignment middle_right
+alignment bottom_right
+
+default_color black
+color1 DDDDDD
+color2 AAAAAA
+color3 888888
+color4 EF5A29
+color5 435B62
+ 
+lua_load ~/.conky/Conky-classik-lua-2/conky_circle.lua
+lua_draw_hook_post main
+
+#${voffset 35}
+#${goto 75}${color3}${font ubuntu:size=32}${time %e}${color1}${voffset 0}${offset -60}${font ubuntu:size=20}${time %A}
+#${goto 85}${color2}${voffset -2}${font ubuntu:size=9}${time %b}${voffset -2} ${color3}${font ubuntu:size=12}${time %Y}${font}
+#
+#${voffset 70}
+
+
+TEXT
+${voffset 25}
+${goto 96}${color5}${font Cadillac Sans:size=18}${time %e}${voffset 10}${color5}${offset -50}${goto 70}${font Cadillac Sans:size=10}${time %A}
+${goto 83}${color5}${voffset -2}${font Cadillac Sans:size=9}${time %b}${voffset -2} ${color5}${font Cadillac Sans:size=11}${time %Y}${font}
+
+${voffset 57}
+${goto 76}${font Cadillac Sans:size=8}${color5}CPU${voffset -6}
+${goto 97}${font Cadillac Sans:size=7}${color2}${top name 1}${alignr}${top cpu 1}%
+${goto 97}${font Cadillac Sans:size=7}${color5}${top name 2}${alignr}${top cpu 2}%
+${goto 97}${font Cadillac Sans:size=7}${color5}${top name 3}${alignr}${top cpu 3}%
+${goto 97}${cpugraph cpu0 14,100}${voffset 2}
+${goto 97}${voffset -10}${font Cadillac Sans:size=7}${color5}${processes} : process 
+
+${voffset 0}
+${goto 74}${font Cadillac Sans:size=8}${color5}MEM
+${goto 90}${font Cadillac Sans:size=7}${color5}${top_mem name 1}${alignr}${top_mem mem 1}%
+${goto 90}${font Cadillac Sans:size=7}${color5}${top_mem name 2}${alignr}${top_mem mem 2}%
+${goto 90}${font Cadillac Sans:size=7}${color5}${top_mem name 3}${alignr}${top_mem mem 3}%
+${goto 91}${color5}${font Cadillac Sans:size=7}${color5}ram${goto 133}${color5}${membar 3,60}
+${goto 108}${color5}${font Cadillac Sans:size=7}${color5}swap${goto 133}${color5}${swapbar 3,60}
+${voffset -2}
+${goto 75}${font Cadillac Sans:size=8}${color5}HDD${voffset 18}
+${goto 90}${diskiograph 14,100}${voffset -10}
+${goto 96}${font Ubuntu:size=7}${color5}used: ${fs_used /home} | home
+${goto 96}${font Ubuntu:size=7}${color5}used: ${fs_used /} | backup
+${voffset 6}
+${goto 74}${font Cadillac Sans:size=9}${color5}NET${alignr}${color5}${font Cadillac Sans:size=8}${color5}${if_up enp3s0}IP : ${addr enp3s0} ${endif}${if_up enp3s0}
+${goto 96}${font Cadillac Sans:size=5}${color5}${voffset 0}${alignr}${downspeedgraph enp3s0 15,80 black black}${voffset 5}
+#${goto 90}${font Ubuntu:size=7}${color5}open ports: ${alignr}${color5}${tcp_portmon 1 65535 count}
+
+
+
+

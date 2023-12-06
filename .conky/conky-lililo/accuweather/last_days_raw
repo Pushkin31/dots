@@ -1,0 +1,82 @@
+<div id="feed-tabs">
+    <a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388" class="arrow-left">Previous 5 Days</a>
+    <a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=11" class="arrow-right">Next 5 Days</a>
+
+  <ul>
+    <li class="day currptt first cl { href: 'http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=6' }">
+    <div class="frame"></div>
+    <div class="bg bg-r">
+        <h3><a href="#">Wed</a></h3>
+        <h4>Apr 04</h4>
+        <div class="icon i-r "></div>
+        <div class="info">
+        <span class="cond">occasional rain and drizzle</span>
+        <strong class="temp">19<span>&deg;</span></strong><span class="low"><span>Lo</span> 9&#176;</span>
+        </div>
+        <!-- /.info -->
+    </div>
+    <!-- /.bg -->
+    </li>
+    <li class="day hv  cl { href: 'http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=7' }">
+    <div class="frame"></div>
+    <div class="bg bg-c">
+        <h3><a href="#">Thu</a></h3>
+        <h4>Apr 05</h4>
+        <div class="icon i-s "></div>
+        <div class="info">
+        <span class="cond">a couple of showers</span>
+        <strong class="temp">18<span>&deg;</span></strong><span class="low"><span>Lo</span> 8&#176;</span>
+        </div>
+        <!-- /.info -->
+        <a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=7" class="bt-more">more</a>
+    </div>
+    <!-- /.bg -->
+    </li>
+    <li class="day hv  cl { href: 'http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=8' }">
+    <div class="frame"></div>
+    <div class="bg bg-r">
+        <h3><a href="#">Fri</a></h3>
+        <h4>Apr 06</h4>
+        <div class="icon i-r "></div>
+        <div class="info">
+        <span class="cond">rain</span>
+        <strong class="temp">16<span>&deg;</span></strong><span class="low"><span>Lo</span> 7&#176;</span>
+        </div>
+        <!-- /.info -->
+        <a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=8" class="bt-more">more</a>
+    </div>
+    <!-- /.bg -->
+    </li>
+    <li class="day hv  cl { href: 'http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=9' }">
+    <div class="frame"></div>
+    <div class="bg bg-su">
+        <h3><a href="#">Sat</a></h3>
+        <h4>Apr 07</h4>
+        <div class="icon i-msu "></div>
+        <div class="info">
+        <span class="cond">mostly sunny</span>
+        <strong class="temp">18<span>&deg;</span></strong><span class="low"><span>Lo</span> 0&#176;</span>
+        </div>
+        <!-- /.info -->
+        <a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=9" class="bt-more">more</a>
+    </div>
+    <!-- /.bg -->
+    </li>
+    <li class="day hv last cl { href: 'http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=10' }">
+    <div class="frame"></div>
+    <div class="bg bg-r">
+        <h3><a href="#">Sun</a></h3>
+        <h4>Apr 08</h4>
+        <div class="icon i-r "></div>
+        <div class="info">
+        <span class="cond">rain</span>
+        <strong class="temp">15<span>&deg;</span></strong><span class="low"><span>Lo</span> 6&#176;</span>
+        </div>
+        <!-- /.info -->
+        <a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388?day=10" class="bt-more">more</a>
+    </div>
+    <!-- /.bg -->
+    </li>
+  </ul>
+</div>
+<!-- /.feed-tabs -->

@@ -1,0 +1,132 @@
+conky.config = {
+-- .conkyrc by Andre <diskmp3.ru@mail.ru>
+
+-- Use Xft?
+	use_xft = true,
+	font = 'DejaVu Sans:size=10',
+	xftalpha = 0.8,
+	text_buffer_size = 2048,
+
+-- Update interval in seconds
+	update_interval = 1,
+
+-- This is the number of times Conky will update before quitting.
+-- Set to zero to run forever.
+	total_run_times = 0,
+
+	own_window = true,
+	own_window_transparent = true,
+	own_window_type = 'override',
+	own_window_type = 'desktop',
+	own_window_type = 'normal use this if you want a nice shadow to appear around conky',
+
+-- If own_window is yes, these window manager hints may be used
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+-- Use double buffering (reduces flicker, may not work for everyone)
+	double_buffer = true,
+
+-- Minimum size of text area
+	minimum_width = 120, minimum_height = 0,
+	maximum_width = 200,
+
+-- Draw shades?
+	draw_shades = false,
+
+-- Draw outlines?
+	draw_outline = false,
+
+-- Draw borders around text
+	draw_borders = false,
+
+-- Stippled borders?
+	stippled_borders = 0,
+
+-- border margins
+	border_margin = '0',
+
+-- border width
+	border_width = 1,
+
+-- Default colors and also border colors
+--default_color c0c7cd
+	default_shade_color = '#000000',
+--default_outline_color grey
+--own_window_colour 000000
+
+-- Text alignment, other possible values are commented
+--alignment top_left
+	alignment = 'top_right',
+--alignment bottom_left
+--alignment bottom_right
+
+-- Gap between borders of screen and text
+-- same thing as passing -x at command line
+	gap_x = 12,
+	gap_y = 20,
+
+-- Subtract file system buffers from used memory?
+	no_buffers = true,
+
+-- set to yes if you want all text to be in uppercase
+	uppercase = false,
+
+-- number of cpu samples to average
+-- set to 1 to disable averaging
+	cpu_avg_samples = 2,
+
+-- number of net samples to average
+-- set to 1 to disable averaging
+	net_avg_samples = 2,
+
+-- Force UTF8? note that UTF8 support required XFT
+	override_utf8_locale = true,
+
+-- Add spaces to keep things from moving about? This only affects certain objects.
+	use_spacer = 'none',
+
+	temperature_unit = 'celcius',
+
+	own_window_argb_value = 0,
+	own_window_argb_visual = true,
+	own_window_colour = '000000',
+};
+
+conky.text = [[
+${font Arial Black:size=12}${voffset 15}CPU ${hr 2}
+${font OpenLogos:size=20}t${font} Kernel: ${alignr}${kernel}
+${voffset -5}
+${goto 4}${font Ubuntu:size=12}Temp CPU: $alignr ${hwmon 2 temp 1}°C
+${font StyleBats:size=20}A${font} CPU1: ${cpu cpu1}% ${alignr}${cpubar cpu1 8,60}
+${font StyleBats:size=20}A${font} CPU2: ${cpu cpu2}% ${alignr}${cpubar cpu2 8,60}
+${font StyleBats:size=20}A${font} CPU3: ${cpu cpu3}% ${alignr}${cpubar cpu3 8,60}
+${font StyleBats:size=20}A${font} CPU4: ${cpu cpu4}% ${alignr}${cpubar cpu4 8,60}
+${font StyleBats:size=20}A${font} CPU5: ${cpu cpu5}% ${alignr}${cpubar cpu5 8,60}
+${font StyleBats:size=20}A${font} CPU6: ${cpu cpu6}% ${alignr}${cpubar cpu6 8,60}
+${font StyleBats:size=20}g${font} RAM: ${mem}${alignr}${membar 8,60}
+${voffset -10}
+${font StyleBats:size=17}q${font} Time working:${alignr}${uptime}
+
+
+${font Arial Black:size=12}${voffset -30}GPU ${hr 2}
+${goto 5}${font Ubuntu:size=12}GPU Temp: ${alignr} ${nvidia temp} °C
+${goto 5}${font Ubuntu:size=12}Mem Used: $alignr}  ${exec nvidia-smi | grep % | cut -c 37-40} MB
+#${goto 5}${font Ubuntu:size=12}Fan Speed: ${alignr} ${execi 5 nvidia-settings -q [fan:0]/GPUCurrentFanSpeed -t} %
+${goto 5}${font Ubuntu:size=12}GPU Clock: ${alignr} ${nvidia gpufreq} MHz
+${goto 5}${font Ubuntu:size=12}Mem Clock: ${alignr} ${nvidia memfreq} MHz
+${voffset 15}
+${font Arial Black:size=12}${voffset -30}DISK ${hr 2}
+${goto 5}${font Ubuntu:size=10}Used: ${fs_used /} of ${fs_size /}  | /
+${goto 5}${font Ubuntu:size=10}Used: ${fs_used /home} of ${fs_size /home} | home
+${goto 5}${font Ubuntu:size=10}Used: ${fs_used /mnt/windows/} of ${fs_size /mnt/windows/}  | Win
+${voffset 3}
+${font Arial Black:size=12}${voffset -10}NETWORK ${hr 2}
+${if_existing /proc/net/route wlp0s19f2u2}
+${voffset -18}${font PizzaDude Bullets:size=14}U${font} Down: ${downspeed wlp0s19f2u2}${alignr}${downspeedgraph wlp0s19f2u2 8,60 black black}
+${voffset 4}${font PizzaDude Bullets:size=14}O${font} Up: ${upspeed wlp0s19f2u2}${alignr}${upspeedgraph wlp0s19f2u2 8,60 black black}
+${voffset 4}${font PizzaDude Bullets:size=14}T${font} Download: ${alignr}${totaldown wlp0s19f2u2}
+${voffset 4}${font PizzaDude Bullets:size=14}N${font} Upload: ${alignr}${totalup wlp0s19f2u2} ${voffset 3}
+${voffset 4}${font Ubuntu:size=14}${if_up wlp0s19f2u2}IP : ${addr wlp0s19f2u2} ${endif}${if_up wlp0s19f2u2}
+
+
+]];

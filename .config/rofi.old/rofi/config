@@ -1,0 +1,4 @@
+rofi.theme: /home/mxn/.local/share/rofi/themes/spotlight-dark.rasi
+icon-theme: "Reversal-purple-dark"
+show-icons: true
+terminal: "urxvt"

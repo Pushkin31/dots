@@ -1,0 +1,13 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Tela purple dark";
+
+}
+//@theme "/home/mxn/.local/share/rofi/themes/spotlight-dark.rasi"
+@import "/home/mxn/.local/share/rofi/themes/spotlight-dark.rasi"
+//@theme "/home/mxn/.local/share/rofi/themes/rounded-purple-dark.rasi"
+//@theme "/usr/share/rofi/themes/dracula.rasi"
+//@theme "/home/mxn/.local/share/rofi/themes/rounded-purple-dark.rasi"
+@theme "/home/mxn/.local/share/rofi/themes/rounded-purple-dark.rasi"

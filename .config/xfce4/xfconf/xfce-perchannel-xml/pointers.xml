@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="pointers" version="1.0">
+  <property name="A4TECH_USB_Device_Keyboard" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="4"/>
+    <property name="Acceleration" type="double" value="2.000000"/>
+  </property>
+  <property name="RAPOO_Rapoo_24G_Wireless_Device_Consumer_Control" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="8"/>
+    <property name="Acceleration" type="double" value="4.000000"/>
+  </property>
+  <property name="RAPOO_Rapoo_24G_Wireless_Device" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="1"/>
+    <property name="Acceleration" type="double" value="2.000000"/>
+  </property>
+</channel>

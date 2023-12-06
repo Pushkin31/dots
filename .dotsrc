@@ -1,0 +1,47 @@
+# sourced as a bash script, this allows command substitution,
+# brace expansion, additional scripting, and anything else that works.
+
+# git repo url for cloning/pushing (leave empty for local backup). If this
+# is set to a non-existant url or a url that isn't a git repo, expect errors
+REPO='https://github.com/Pushkin31/dots'
+
+# git branch used when pushing changes, defaults to HEAD
+BRANCH='main'
+
+# location for backup/dotfile folder or repo to be created/cloned
+BPATH='/mnt/Files/dots/'
+
+# location kbfs
+KB_PATH='/run/user/1000/keybase/kbfs/private/cvc/dots'
+
+# file paths to back up as BPATH/BKPS
+# qoutes surround paths that contain spaces or expect errors
+BKPS=(
+startpage
+{стримы.sh,exclude.txt}
+.{bin,conky,fonts,ncmpcpp}
+.ssh/{id_rsa.pub}
+.{zshrc,xinitrc,aurlist.txt,pkglist.txt,dotsrc}
+.config/{autostart,cava,devilspie2,easyeffects,filezilla,flameshot,fontconfig,galculator,geany}
+.config/{gtk-2.0,gtk-3.0,xfburn,xfce4-dict,xfwm,qt5ct}
+.config/{htop,jgmenu,leafpad,menus,neofetch,ranger,skippy-xd,smplayer,stacer,straw-viewer,streamlink,systemd,viewnior,vlc,volumeicon}
+.config/{mpd,mpv,ncmpcpp,pulse,PulseEffects,spicetify,viper4linux}
+.config/{polybar,rofi,rofi.old,tint2,Thunar}
+.config/{conky-manager.json,conky-manager2.json,pavucontrol.ini,picom.conf,picom_blur.conf,user-dirs.dirs,user-dirs.locale}
+.config/xfce4/panel
+.config/xfce4/terminal
+.config/xfce4/xfconf
+.config/xfce4/{help.rc,helpers.rc}
+.mozilla/firefox/gjn9xwch.default-release/chrome/
+)
+
+# location file BPATH/ROOT_DIR
+ROOT_DIR='root'
+
+# file paths /
+ROOT_BKPS=(
+etc/{fstab}
+etc/pulse/{daemon.conf}
+etc/X11/xorg.conf
+etc/X11/xorg.conf.d/00-keyboard.conf
+)

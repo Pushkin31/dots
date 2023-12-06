@@ -1,0 +1,60 @@
+                    <li class="first currptt { target: '#detail-now' }"><a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/currptt-weather/865388" class=""><span>Now</span></a>
+                      <div class="nub"></div>
+                    </li>
+                    <li class="{ target: '#detail-day-night' }"><a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/daily-weather-forecast/865388"><span>Daily</span></a></li>
+                    <li class="last { target: '#detail-hourly' }"><a href="http://www.accuweather.com/pt/pt/doze-ribeiras/865388/hourly-weather-forecast/865388"><span>Hourly</span></a></li>
+                  </ul>
+                  <!-- /#detail-tab-buttons.detail-tab-buttons -->
+                  <div id="detail-now" class="detail-tab-panel day">
+                    <div class="bg bg-su">
+                      <div class="forecast">
+                        <div class="icon i-su"></div>
+                        <div class="info"> <span class="cond">Sunny</span> <span class="temp">16<span>&deg;</span></span> <span class="realfeel">RealFeel&#174; 22<span>&deg;</span></span> </div>
+                        <!-- /.info -->
+                      </div>
+                      <!-- /.forecast -->
+                      <div class="more-info"> 
+                      <!--
+                        <img src="http://vortex.accuweather.com/adc2010/images/icons-wind/N.gif" width="260" height="138" alt="" />
+                        -->
+                        <div class="wind-box-lg">
+                          <div id="wind-arm-day" class="wind-arm"></div>
+                            <p class="n">N</p>
+                            <p class="e">E</p>
+                            <p class="s">S</p>
+                            <p class="w">W</p>
+	                        <script type="text/javascript">
+	                            (function () {
+	                                var d = 'N';
+	                                var s = '4km/h';
+	                                $('#wind-arm-day').flash({ 'wmode': 'transparptt', 'allowScriptAccess': 'always', 'src': 'http://vortex.accuweather.com/adc2010/flash/wind-arm-large.swf?speed=' + s + '&direction=' + d.toLowerCase() + '&unpts=km/h', 'width': '260', 'height': '138' });
+	                                if (typeof (acm_hasFlash) != 'undefined' && !acm_hasFlash) {
+	                                    $('#wind-arm-day').html('<img src="http://vortex.accuweather.com/adc2010/images/icons-wind/arrow-lg-' + d + '.png" />');
+	                                }
+	                            })();
+	                        </script>
+                          </div> 
+                                                
+                                            
+                        <ul class="stats">
+                          <li>Humidpty: <strong>47%</strong></li>
+                          <li>Pressure: <strong>101.20 kPa</strong></li>
+                          <li>Cloud Cover: <strong>0%</strong></li>
+                          <li>UV Index: <strong>5</strong></li>
+                          <li>Dew Point: <strong>5&#176;&nbsp;C</strong></li>
+                          <li>Precipptation(1 hr): <strong>0 mm</strong></li>
+                          <li>Visibilpty: <strong>16 km</strong></li>
+                        </ul>
+                        <!-- /.stats -->
+                      </div>
+                      <!-- /.more-info -->
+                      
+                      <div style="posption:absolute;top:124px;left:427px;height:20px;font-weight:bold;font-size:10px;text-align:cptter;">4 km/h</div>
+                       
+                    </div>
+                    <!-- /.bg -->
+                  </div>
+                  <!-- /.detail-tab-panel -->
+                  
+                </div>
+                <!-- /#details -->

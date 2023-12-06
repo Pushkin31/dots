@@ -1,0 +1,7 @@
+[user]
+noWindowsListIfSingle=true
+onlyDisplayVisible=true
+onlyDisplayScreen=false
+indicatorStyle=2
+indicatorColor=rgb(192,97,203)
+forceIconSize=false

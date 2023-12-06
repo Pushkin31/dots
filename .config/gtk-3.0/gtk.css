@@ -1,0 +1,14 @@
+VteTerminal, vte-terminal {
+    padding: 10px;
+}
+
+#.xfce4-panel.background {
+border-radius: 12px;
+}
+.xfce4-panel.background button {
+border-radius: 12px;
+}
+
+#xfwm-tabwin {
+    -XfwmTabwinWidget-icon-size: 180px;
+    -XfwmTabwinWidget-preview-size: 180px; }

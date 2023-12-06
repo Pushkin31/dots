@@ -1,0 +1,9 @@
+1. Put the conkyrc file and the accuweather folder at ~/.weather
+
+2. Change the location at ~/.weather/accuweather/accuw_script to put your location by searching accuweather and copying the address from your browser
+
+3. Change the description of your machine at conkyrc file at ${alignc 0}Samsung Laptop to whatever.
+
+4. If your battery does not show or the output of "conky -c ~/.weather/conkyrc" says  "Conky: can't open /proc/acpi/battery/BAT1/state: No such file or directory" try changing BAT1 to BAT0 at the conkyrc file.
+
+5. Put the fonts at ~/.fonts.
